@@ -44,7 +44,7 @@ app.delete("/api/notes/:id", function(req, res) {
     fs.readFile(path.join(__dirname, "db/db.json"), 'utf8', function(err, data) {
         let notes = JSON.parse(data);
         notes.splice(req.params.id - 1, 1);
-        notes.forEach((note, index) => {note.id = index;});
+        notes.forEach((note, index) => {note.id = index + 1;});
         fs.writeFile(path.join(__dirname, "db/db.json"), JSON.stringify(notes), 'utf8', () => {
             res.json(true)
         });
