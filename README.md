@@ -3,6 +3,7 @@
 
 # Table of Contents
 * [Description](#Description)
+* [Deployment](#Deployment)
 * [Installation](#Installation)
 * [License](#License)
 * [Contribution](#Contribution)
@@ -10,6 +11,9 @@
 
 # Description
 An application that allows the user to write, save, and delete notes.
+
+# Deployment
+This application is currently deployed using [Heroku](https://note-taker-saves-your-notes.herokuapp.com/).
 
 # Installation
 Just install with `npm i` through the command line.
